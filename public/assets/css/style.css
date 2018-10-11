@@ -1,0 +1,21 @@
+html, body {
+    background-image: linear-gradient(to bottom right, rgb(49, 61, 228), rgb(14, 187, 144));
+    background-repeat: no-repeat;
+    height: 110%;
+    width: 110%;
+    background-attachment: fixed;
+
+}
+
+#section {
+
+    color: white;
+}
+
+
+
+.headline a {
+    font-style: italic;
+    color: white;
+
+}
