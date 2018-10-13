@@ -53,7 +53,7 @@ app.use(express.static(__dirname + '/public'));
 app.listen(process.env.PORT || 8080, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env)
 });
-console.log("server is listening on port: " + port);
+console.log("server is listening on port: " + PORT);
 
 //"Get" route that is used to retrieve information from the mongo database and display it on the front end
 app.get("/scrape", function (req, res){
