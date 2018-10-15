@@ -19,3 +19,19 @@ html, body {
     color: white;
 
 }
+
+.comments-box {
+    /* color: red;
+    background-color: black;
+    width: 300px; */
+
+    border-radius: 25px;
+    background: transparent;
+    width: max-content;
+    padding: 20px;
+
+
+
+
+
+}

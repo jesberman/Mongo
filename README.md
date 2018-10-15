@@ -1,1 +1,1 @@
-# Mongo
+This application is designed to serve as a web scraper, taking new headlines from the washingtonpost.com, storing them in a Mongo database, and displaying them on screen at the user's discretion.  Additionally, the site allows the user to post comments to individual articles, and to allow users to see any comments previously posted (including their own).

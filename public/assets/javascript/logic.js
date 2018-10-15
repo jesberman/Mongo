@@ -50,6 +50,7 @@ $("#btn2").click(function(){
             articleHeader.append(articleLink);
 
             var pageBreak = $("<br>");
+            var newDiv = $("<div>");
 
             var postCommentButton = $("<button>");
             postCommentButton.addClass("post-comment");
@@ -68,6 +69,7 @@ $("#btn2").click(function(){
             var commentsBox = $("<div>");
             commentsBox.addClass("comments-box");
             commentsBox.attr("id", response[i]._id);
+
 
             var idContainer =$("<p>");
             idContainer.append(articleID);
@@ -93,10 +95,6 @@ $("#btn2").click(function(){
         }
     })
 });
-
-//write an ajax request that will "GET" the information on the
-//mongodb, and "then" (after the ajax request) use jquery to
-//display the results on the DOM.  After this is done, tell 
 
 
 
@@ -135,6 +133,9 @@ $(document).on("click", ".see-comments", function(){
         $("#"+thisId).text("");
         for (i=0;i<data[0].note.length;i++){
         $("#"+thisId).append(data[0].note[i]);
+
+        $("#"+thisId).css("background-color", "rgb(55, 184, 113)");
+
         }
     });
 })
