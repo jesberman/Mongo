@@ -105,50 +105,50 @@ app.post("/scrape/:id", function(req, res) {
     .then(dbNote => res.json(dbNote))
   });
 
-app.get("/index", function (req, res) {
-    request(url, function (err, resp, body) {
-        var $ = cheerio.load(body);
+// app.get("/index", function (req, res) {
+//     request(url, function (err, resp, body) {
+//         var $ = cheerio.load(body);
 
-        var headline =$('.headline');
-        var headlineText = headline.text();
+//         var headline =$('.headline');
+//         var headlineText = headline.text();
         
-        var blurb =$('.blurb');
-        var blurbText = blurb.text();
+//         var blurb =$('.blurb');
+//         var blurbText = blurb.text();
 
-         job = {        
-            headline: headlineText,
-            blurb: blurbText
-        }
+//          job = {        
+//             headline: headlineText,
+//             blurb: blurbText
+//         }
 
-        var stringJob = JSON.stringify(job);
-        emptyArray.push(stringJob); 
+//         var stringJob = JSON.stringify(job);
+//         emptyArray.push(stringJob); 
 
-        var newText =(start)+(emptyArray)+(end);
-        console.log("job:");
-        console.log(job);
-        res.send(newText);
-    });
-});
+//         var newText =(start)+(emptyArray)+(end);
+//         console.log("job:");
+//         console.log(job);
+//         res.send(newText);
+//     });
+// });
 
 
-app.get("/", function (req, res) {
-    request(url, function (err, resp, body) {
-        var $ = cheerio.load(body);
-    });
-    res.sendFile(path.join(__dirname, "./index.html"));  
-});
+// app.get("/", function (req, res) {
+//     request(url, function (err, resp, body) {
+//         var $ = cheerio.load(body);
+//     });
+//     res.sendFile(path.join(__dirname, "./index.html"));  
+// });
 
-app.get("/posting", function(req, res){
-   request('https://www.washingtonpost.com/', function (error, message, html) {
-    res.send(html);
-   });
-});
+// app.get("/posting", function(req, res){
+//    request('https://www.washingtonpost.com/', function (error, message, html) {
+//     res.send(html);
+//    });
+// });
 
-app.get("/test", function(req, res){
+// app.get("/test", function(req, res){
     
-    var test = 'test';
-    var htmlText = '<h2>';
-    htmlText += test;
-    htmlText += '</h2>';
-    res.send(htmlText);
-});
+//     var test = 'test';
+//     var htmlText = '<h2>';
+//     htmlText += test;
+//     htmlText += '</h2>';
+//     res.send(htmlText);
+// });

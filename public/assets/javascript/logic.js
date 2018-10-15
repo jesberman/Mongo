@@ -133,6 +133,9 @@ $(document).on("click", ".see-comments", function(){
         $("#"+thisId).text("");
         for (i=0;i<data[0].note.length;i++){
         $("#"+thisId).append(data[0].note[i]);
+        $("#"+thisId).append("<br>");
+        $("#"+thisId).append("<p>")+("End of Comment")+("</p>");
+
 
         $("#"+thisId).css("background-color", "rgb(55, 184, 113)");
 
