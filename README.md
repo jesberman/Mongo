@@ -1,1 +1,3 @@
-This application is designed to serve as a web scraper, taking new headlines from the washingtonpost.com, storing them in a Mongo database, and displaying them on screen at the user's discretion.  Additionally, the site allows the user to post comments to individual articles, and to allow users to see any comments previously posted (including their own).
+This application is designed to serve as a web scraper, taking new headlines from the washingtonpost.com,storing them in a Mongo database, and displaying them on screen at the user's discretion.  Additionally, the site allows the user to post comments to individual articles, and to allow users to see any comments previously posted (including their own).
+
+To use the app, first click on the "Get Washington Post" button to tell the program to update the database with the latest headlines from the Washington Post.  Once this is done, click on "Display Washington Post" to see these headlines on your screen.
